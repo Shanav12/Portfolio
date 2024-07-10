@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://linkedin.com/in/shanav-bagga/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/Shanav12"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:svbagga2@illinois.edu"
+        }
+    ]
+}

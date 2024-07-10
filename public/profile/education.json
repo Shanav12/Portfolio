@@ -1,0 +1,13 @@
+{
+    "education":[
+        {
+            "title": "August 2022 - May 2026",
+            "cardTitle": "B.S.  Computer Science & Statistics",
+            "cardSubtitle":"University of Illinois Urbana-Champaign",
+            "cardDetailedText": "GPA: 3.71",
+            "icon" : {
+                "src": "images/education/I.jpg"
+            }
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/db.jpg",
+            "title": "Customer ETL Pipeline",
+            "bodyText": "- Implemented an **ETL Pipeline** that extracted 250,000 records of ecommerce customer data from **MySQL**\n -  Transformed data in **PySpark** through filtering out 5,000 rows containing null values, engineering a purchases feature, and loaded it to **Google BigQuery**\n - Engineered a **logistic regression model** to predict customer retainment, achieving an accuracy rate of 75%",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Shanav12/ETL-Pipeline"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Spark",
+                "MySQL",
+                "Google BigQuery"
+            ]
+        },
+        {
+            "image" : "images/projects/swift.jpg",
+            "title": "GPT Lyric Generator",
+            "bodyText": "- Utilized **GPT-2 embeddings** and the **GPT-Neo** model from Hugging Face to implement a full-stack website that randomly generates lyrics in the same style as Taylor Swift and deployed it onto **Heroku**\n - Deployed the model with a loss of 0.138 to Hugging Face and fine-tuned the output of API calls by adjusting hyperparameters, resulting in a 20% increase in cohesive and accurate lyrics\n",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Shanav12/GPT-Lyric-Generator"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://morning-meadow-85564-c8d5f713d93f.herokuapp.com/"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Flask",
+                "HTML",
+                "CSS",
+                "Javascript"
+            ]
+        },
+        {
+            "image" : "images/projects/chart.jpg",
+            "title": "LSTM Trading Model",
+            "bodyText": "- Implemented a deep learning model using 4 LSTM layers in **Keras** and stock data through **REST API** calls to Alpaca to analyze stock data for a 100 tickers from the Q1 in 2022 until present\n - Predicted the next 10-day moving average for each ticker took long/short positions by comparing the forecast to the current 10-day moving average, generating **10% profit** in 1 month",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Shanav12/LSTM_Trading_Model"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Tensorflow",
+                "Keras",
+                "REST API"
+            ]
+        },
+        {
+            "image" : "images/projects/football.jpg",
+            "title": "Sports Ball Classification Model",
+            "bodyText": "- Fine-tuned a **Google ViT** model in Python that takes prompts the user to upload an image of a sports ball and outputs the probability of which type of sports balls it could be\n - Used **Roboflow** to classify images and create the train, test, and validation datasets, and deployed the fine-tuned model to Hugging Face\n - Implemented a full-stack website using Flask, HTML, and CSS to allow users to interact with the model",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Shanav12/Sports_Ball_Classification_Model"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Flask",
+                "Google ViT",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "image" : "images/projects/chat.jpg",
+            "title": "TCP Chat App",
+            "bodyText": "- Engineered a chat application using **Boost** libraries in C++, facilitating seamless multi-client connectivity to a server through **TCP/IP** networking protocols to ensure efficient and reliable message delivery\n - Implemented efficient **threading** and **synchronization** mechanisms to handle multiple clients simultaneously, enhancing the overall system stability and user experience\n",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Shanav12/TCP-Chat-App"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Boost",
+                "TCP/IP"
+            ]
+        }
+    ]
+}
