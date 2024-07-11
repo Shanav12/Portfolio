@@ -9,7 +9,6 @@ import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
   introTextContainer: {
-    margin: 10,
     flexDirection: 'column',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
@@ -17,10 +16,13 @@ const styles = {
     fontWeight: 500,
   },
   introImageContainer: {
-    margin: 10,
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+  },
+  image: {
+    maxWidth: '100%',
+    height: 'auto',
   },
 };
 
@@ -48,20 +50,20 @@ function About(props) {
       <Header title={header} />
       <div className="section-content-container">
         <Container>
-          {data
-            ? (
-              <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row>
-              </Fade>
-            )
-            : <FallbackSpinner />}
+          {data ? (
+            <Fade>
+              <Row>
+                <Col xs={12} md={6} style={styles.introTextContainer}>
+                  {parseIntro(data.about)}
+                </Col>
+                <Col xs={12} md={6} style={styles.introImageContainer}>
+                  <img src={data?.imageSource} alt="profile" style={styles.image} />
+                </Col>
+              </Row>
+            </Fade>
+          ) : (
+            <FallbackSpinner />
+          )}
         </Container>
       </div>
     </>
