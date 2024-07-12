@@ -1,7 +1,7 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer intern",
+            "title": "Software Engineer Intern",
             "subtitle": "Arora Innoventions",
             "workDescription": [
                 "Fine-tuned a Stable Diffusion and Control Net model on 1000 image pairs for 5 epochs, optimizing hyperparameters to achieve a 60% improvement in output image quality for avatar creation",
