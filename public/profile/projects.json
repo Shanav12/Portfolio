@@ -18,28 +18,6 @@
             ]
         },
         {
-            "image" : "images/projects/swift.jpg",
-            "title": "GPT Lyric Generator",
-            "bodyText": "- Utilized **GPT-2 embeddings** and the **GPT-Neo** model from Hugging Face to implement a full-stack website that randomly generates lyrics in the same style as Taylor Swift and deployed it onto **Heroku**\n - Deployed the model with a loss of 0.138 to Hugging Face and fine-tuned the output of API calls by adjusting hyperparameters, resulting in a 20% increase in cohesive and accurate lyrics\n",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/Shanav12/GPT-Lyric-Generator"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://morning-meadow-85564-c8d5f713d93f.herokuapp.com/"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Flask",
-                "HTML",
-                "CSS",
-                "Javascript"
-            ]
-        },
-        {
             "image" : "images/projects/chart.jpg",
             "title": "LSTM Trading Model",
             "bodyText": "- Implemented a deep learning model using 4 LSTM layers in **Keras** and stock data through **REST API** calls to Alpaca to analyze stock data for a 100 tickers from the Q1 in 2022 until present\n - Predicted the next 10-day moving average for each ticker took long/short positions by comparing the forecast to the current 10-day moving average, generating **10% profit** in 1 month",

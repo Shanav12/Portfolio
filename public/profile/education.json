@@ -2,17 +2,18 @@
     "education":[
         {
             "title": "August 2025 - May 2026",
-            "cardTitle": "MCS",
+            "cardTitle": "Master's of Computer Science",
             "cardSubtitle":"University of Illinois Urbana-Champaign",
+            "cardDetailedText": "GPA: 3.60",
             "icon" : {
                 "src": "images/education/I.jpg"
             }
         },
         {
             "title": "August 2022 - May 2025",
-            "cardTitle": "B.S.  Computer Science & Statistics",
+            "cardTitle": "B.S. Computer Science & Statistics",
             "cardSubtitle":"University of Illinois Urbana-Champaign",
-            "cardDetailedText": "GPA: 3.73",
+            "cardDetailedText": "GPA: 3.71",
             "icon" : {
                 "src": "images/education/I.jpg"
             }

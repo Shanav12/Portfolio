@@ -8,7 +8,7 @@
                 "Created Excel workbooks for each deployment plan from user form input, stored the files in Azure Blob Storage, stored metadata in Azure SQL Server, and hosted the app in Azure App Services",
                 "Engineered a Python script to automate the migration of Dynatrace OneAgent from 250 host servers and 6 tenants to a single prod and non-prod tenant, utilizing multiprocessing to execute in parallel"
             ],
-            "dateText": "06/2025 – Present"
+            "dateText": "06/2025 – 08/2025"
         },
         {
             "title": "Software Engineer intern",
