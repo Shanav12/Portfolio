@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SOCIAL = [
   { label: 'GitHub', href: 'https://github.com/Shanav12', icon: GitHubIcon },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/shanav-bagga/', icon: LinkedInIcon },
-  { label: 'Email', href: 'mailto:svbagga2@illinois.edu', icon: EmailIcon },
+  { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&to=bagga.shan@gmail.com', icon: EmailIcon },
 ]
 
 function GitHubIcon() {
@@ -63,7 +63,7 @@ export default function Home() {
             <a
               key={label}
               href={href}
-              target={href.startsWith('mailto') ? undefined : '_blank'}
+              target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded border border-navy/30 text-dim hover:text-white hover:bg-navy hover:border-navy transition-colors duration-200"
               aria-label={label}
