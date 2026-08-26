@@ -68,7 +68,7 @@ export default function Experience() {
                       <h3 className="font-serif text-primary text-2xl font-medium">{item.title}</h3>
                       <p className="text-secondary text-base mt-0.5 italic">{item.subtitle}</p>
                     </div>
-                    <span className="font-serif text-sm text-dim whitespace-nowrap pt-1.5 shrink-0 italic">
+                    <span className="font-serif text-lg text-dim whitespace-nowrap pt-1.5 shrink-0 italic">
                       {item.dateText}
                     </span>
                   </div>
