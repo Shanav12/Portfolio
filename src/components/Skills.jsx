@@ -1,31 +1,32 @@
 import React from 'react'
-import cppIcon from '../../public/skills/c-plus-plus.svg'
-import pythonIcon from '../../public/skills/python.png'
-import javaIcon from '../../public/skills/java.png'
-import jsIcon from '../../public/skills/js.png'
-import tsIcon from '../../public/skills/typescript.png'
-import rustIcon from '../../public/skills/rust.png'
-import sqlIcon from '../../public/skills/sql.png'
-import htmlIcon from '../../public/skills/html.png'
-import reactIcon from '../../public/skills/react.png'
-import nodeIcon from '../../public/skills/nodejs.png'
-import expressIcon from '../../public/skills/ex.png'
-import flaskIcon from '../../public/skills/flask.jpg'
-import tfIcon from '../../public/skills/tensorflow.jpg'
-import sparkIcon from '../../public/skills/spark.jpg'
-import gitIcon from '../../public/skills/git.png'
-import dockerIcon from '../../public/skills/docker.png'
-import mysqlIcon from '../../public/skills/mysql.png'
-import mongoIcon from '../../public/skills/mongo-db.png'
-import awsIcon from '../../public/skills/aws.jpg'
-import linuxIcon from '../../public/skills/linux.jpg'
-import gcpIcon from '../../public/skills/gcp.png'
-import goIcon from '../../public/skills/go.svg'
-import rIcon from '../../public/skills/r.svg'
-import pytorchIcon from '../../public/skills/pytorch.svg'
-import azureIcon from '../../public/skills/azure.svg'
-import kubernetesIcon from '../../public/skills/kubernetes.svg'
-import terraformIcon from '../../public/skills/terraform.svg'
+
+const cppIcon = '/skills/c-plus-plus.svg'
+const pythonIcon = '/skills/python.png'
+const javaIcon = '/skills/java.png'
+const jsIcon = '/skills/js.png'
+const tsIcon = '/skills/typescript.png'
+const rustIcon = '/skills/rust.png'
+const sqlIcon = '/skills/sql.png'
+const htmlIcon = '/skills/html.png'
+const reactIcon = '/skills/react.png'
+const nodeIcon = '/skills/nodejs.png'
+const expressIcon = '/skills/ex.png'
+const flaskIcon = '/skills/flask.jpg'
+const tfIcon = '/skills/tensorflow.jpg'
+const sparkIcon = '/skills/spark.jpg'
+const gitIcon = '/skills/git.png'
+const dockerIcon = '/skills/docker.png'
+const mysqlIcon = '/skills/mysql.png'
+const mongoIcon = '/skills/mongo-db.png'
+const awsIcon = '/skills/aws.jpg'
+const linuxIcon = '/skills/linux.jpg'
+const gcpIcon = '/skills/gcp.png'
+const goIcon = '/skills/go.svg'
+const rIcon = '/skills/r.svg'
+const pytorchIcon = '/skills/pytorch.svg'
+const azureIcon = '/skills/azure.svg'
+const kubernetesIcon = '/skills/kubernetes.svg'
+const terraformIcon = '/skills/terraform.svg'
 
 const SKILLS = [
   {
@@ -78,7 +79,7 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto">
         <SectionHeader label="My Background" title="Skills" />
 
-        <div className="space-y-12">
+        <div className="space-y-16">
             {SKILLS.map((group, i) => (
               <div key={group.title}>
                 <div className="flex items-center gap-4 mb-6">
@@ -107,13 +108,6 @@ export default function Skills() {
                     </div>
                   ))}
                 </div>
-                {i < SKILLS.length - 1 && (
-                  <div className="flex items-center gap-4 mt-12">
-                    <span className="h-px flex-1 bg-navy/10" />
-                    <span className="text-navy/30 text-xs">✦</span>
-                    <span className="h-px flex-1 bg-navy/10" />
-                  </div>
-                )}
               </div>
             ))}
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import profileImg from '../../public/about/smokies.jpg'
+
+const profileImg = '/about/smokies.jpg'
 
 const ABOUT = {
   text: ` Hi! My name is Shanav Bagga and I recently graduated from the University of Illinois at Urbana-Champaign with a Master's of Computer Science degree. I'm currently a Software Engineer I at College Board based out of New York!\n\n\n\nI'm extremely passionate about my field, with a particular interest in Distributed Systems and Computer Networks. I'm a huge fan of football and F1 and can be caught watching every Bears game and F1 race. I've only been to 3 countries at the moment but I hope to visit numerous more in the future, especially Western European countries. Outside of my time working and studying, I've had a growing interest in graphic design and video editing using Canva and Adobe Creative Cloud!`,

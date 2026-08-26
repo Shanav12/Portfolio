@@ -1,8 +1,9 @@
 import React from 'react'
-import dbImg from '../../public/projects/db.jpg'
-import chartImg from '../../public/projects/chart.jpg'
-import footballImg from '../../public/projects/football.jpg'
-import chatImg from '../../public/projects/chat.jpg'
+
+const dbImg = '/projects/db.jpg'
+const chartImg = '/projects/chart.jpg'
+const footballImg = '/projects/football.jpg'
+const chatImg = '/projects/chat.jpg'
 
 const PROJECTS = [
   {
