@@ -21,7 +21,7 @@ export default function Education() {
       <div className="max-w-4xl mx-auto">
         <SectionHeader label="Academic" title="Education" />
 
-        <div className="space-y-6">
+        <div className="space-y-8">
             {EDUCATION.map((item, i) => (
               <div key={i} className="border border-navy/20 rounded p-8 hover:border-navy/50 transition-colors duration-200 bg-[#f5f4f1]">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">

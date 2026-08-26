@@ -39,56 +39,124 @@ const HOME = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 pt-16">
-      <div className="max-w-3xl w-full">
-        <div className="flex items-center gap-4 mb-8">
-          <span className="h-px w-12 bg-navy/40" />
-          <p className="font-serif text-xs text-navy uppercase tracking-widest">Portfolio</p>
-          <span className="h-px w-12 bg-navy/40" />
-        </div>
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 pt-28 pb-16 md:py-16">
+      <div className="max-w-5xl w-full grid md:grid-cols-2 gap-16 items-center">
+        {/* Mobile layout */}
+        <div className="md:hidden flex flex-col items-center text-center">
+          <div className="flex items-center gap-4 mb-8">
+            <span className="h-px w-12 bg-navy/40" />
+            <p className="font-serif text-xs text-navy uppercase tracking-widest">Portfolio</p>
+            <span className="h-px w-12 bg-navy/40" />
+          </div>
 
-        <h1 className="font-serif text-5xl md:text-7xl text-primary tracking-tight leading-none mb-4">
-          {HOME.name}
-        </h1>
+          <div className="relative mb-6">
+            <div className="absolute inset-0 border border-navy/30 translate-x-2 translate-y-2 rounded" />
+            <img
+              src="/prof_pic.jpg"
+              alt="Shanav Bagga"
+              className="relative w-40 h-52 object-cover object-top rounded"
+            />
+          </div>
 
-        <div className="mb-2 text-xl md:text-2xl text-secondary">
-          <span className="text-navy font-medium font-sans">I'm a Software Engineer for College Board</span>
-        </div>
-        <div className="mb-10 text-base md:text-lg text-dim font-sans">
-          Specializing in distributed systems
-        </div>
+          <h1 className="font-serif text-5xl text-primary tracking-tight leading-none mb-4">
+            {HOME.name}
+          </h1>
 
-        <div className="flex items-center gap-4 mb-12">
-          {SOCIAL.map(({ label, href, icon: Icon }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2.5 rounded border border-navy/30 text-dim hover:text-white hover:bg-navy hover:border-navy transition-colors duration-200"
-              aria-label={label}
+          <p className="text-navy font-medium font-sans mb-2">I'm a Software Engineer for College Board</p>
+          <p className="font-sans text-sm mb-8">Specializing in distributed systems</p>
+
+          <div className="flex items-center justify-center gap-4 mb-8">
+            {SOCIAL.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded border border-navy/30 text-dim hover:text-white hover:bg-navy hover:border-navy transition-colors duration-200"
+                aria-label={label}
+              >
+                <Icon />
+              </a>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Link
+              to="/about"
+              className="px-5 py-2.5 bg-navy text-white text-xs font-serif uppercase tracking-widest rounded border border-navy hover:opacity-90 transition-opacity duration-200"
             >
-              <Icon />
-            </a>
-          ))}
+              About me
+            </Link>
+            <Link
+              to="/projects"
+              className="px-5 py-2.5 border border-navy text-navy text-xs font-serif uppercase tracking-widest rounded hover:bg-navy hover:text-white transition-colors duration-200"
+            >
+              View projects
+            </Link>
+          </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <Link
-            to="/about"
-            className="px-5 py-2.5 bg-navy text-white text-xs font-serif uppercase tracking-widest rounded border border-navy hover:bg-muted transition-colors duration-200"
-          >
-            About me
-          </Link>
-          <Link
-            to="/projects"
-            className="px-5 py-2.5 border border-navy/40 text-navy text-xs font-serif uppercase tracking-widest rounded hover:bg-navy hover:text-white transition-colors duration-200"
-          >
-            View projects
-          </Link>
+        {/* Desktop layout */}
+        <div className="hidden md:block">
+          <div className="flex items-center gap-4 mb-8">
+            <span className="h-px w-12 bg-navy/40" />
+            <p className="font-serif text-xs text-navy uppercase tracking-widest">Portfolio</p>
+            <span className="h-px w-12 bg-navy/40" />
+          </div>
+
+          <h1 className="font-serif text-7xl text-primary tracking-tight leading-none mb-4">
+            {HOME.name}
+          </h1>
+
+          <div className="mb-2 text-2xl text-secondary">
+            <span className="text-navy font-medium font-sans">I'm a Software Engineer for College Board</span>
+          </div>
+          <div className="mb-10 text-lg font-sans">
+            Specializing in distributed systems
+          </div>
+
+          <div className="flex items-center gap-4 mb-12">
+            {SOCIAL.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded border border-navy/30 text-dim hover:text-white hover:bg-navy hover:border-navy transition-colors duration-200"
+                aria-label={label}
+              >
+                <Icon />
+              </a>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Link
+              to="/about"
+              className="px-5 py-2.5 bg-navy text-white text-xs font-serif uppercase tracking-widest rounded border border-navy hover:opacity-90 transition-opacity duration-200"
+            >
+              About me
+            </Link>
+            <Link
+              to="/projects"
+              className="px-5 py-2.5 border border-navy text-navy text-xs font-serif uppercase tracking-widest rounded hover:bg-navy hover:text-white transition-colors duration-200"
+            >
+              View projects
+            </Link>
+          </div>
+        </div>
+
+        <div className="hidden md:flex justify-end">
+          <div className="relative">
+            <div className="absolute inset-0 border border-navy/30 translate-x-3 translate-y-3 rounded" />
+            <img
+              src="/prof_pic.jpg"
+              alt="Shanav Bagga"
+              className="relative w-72 h-96 object-cover object-top rounded transition-all duration-500"
+            />
+          </div>
         </div>
       </div>
-
     </div>
   )
 }
