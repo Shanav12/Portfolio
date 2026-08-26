@@ -2,9 +2,35 @@ import React from 'react'
 
 const profileImg = '/about/smokies.jpg'
 
-const ABOUT = {
-  text: ` Hi! My name is Shanav Bagga and I recently graduated from the University of Illinois at Urbana-Champaign with a Master's of Computer Science degree. I'm currently a Software Engineer I at College Board based out of New York!\n\n\n\nI'm extremely passionate about my field, with a particular interest in Distributed Systems and Computer Networks. I'm a huge fan of football and F1 and can be caught watching every Bears game and F1 race. I've only been to 3 countries at the moment but I hope to visit numerous more in the future, especially Western European countries. Outside of my time working and studying, I've had a growing interest in graphic design and video editing using Canva and Adobe Creative Cloud!`,
-}
+const INTERESTS = [
+  {
+    icon: '🎵',
+    label: 'Music',
+    detail: 'R&B + Rap',
+    sub: 'Drake · Kanye · J. Cole · Giveon · Omar Apollo · Brent Faiyaz · Bryson Tiller',
+  },
+  {
+    icon: '🏎️',
+    label: 'Formula 1',
+    sub: 'Huge McLaren fan, specifically of Lando Norris',
+  },
+  {
+    icon: '🏈',
+    label: 'Football',
+    sub: 'Born & raised in the Windy City, huge Bears Fan',
+  },
+  {
+    icon: '☕',
+    label: 'Coffee',
+    sub: 'Caramel latte variations or cappuccinos are the go to',
+  },
+  {
+    icon: '✈️',
+    label: 'Travel',
+    detail: 'Dream destinations',
+    sub: 'Banff · Australia · Western Europe',
+  },
+]
 
 export default function About() {
   return (
@@ -12,13 +38,21 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         <SectionHeader label="About" title="A bit about me" />
 
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        {/* Bio + Photo */}
+        <div className="grid md:grid-cols-2 gap-16 items-start mb-20">
           <div className="space-y-6">
-            {ABOUT.text.split('\n\n').filter(Boolean).map((para, i) => (
-              <p key={i} className="text-secondary leading-relaxed text-base">
-                {para.trim()}
-              </p>
-            ))}
+            <p className="text-secondary leading-relaxed text-base">
+              Hi! I'm Shanav Bagga — a Software Engineer at College Board based in New York, fresh
+              off a Master's in Computer Science from the University of Illinois at
+              Urbana-Champaign. I'm deeply passionate about Distributed Systems and Computer
+              Networks, and I love building systems that scale.
+            </p>
+            <p className="text-secondary leading-relaxed text-base">
+              Outside of work I'm usually finding a new playlist, catching an F1 race, or hunting
+              down a great cappuccino. I grew up playing quarterback and the Bears hold a permanent
+              piece of my heart (for better or worse). Lately I've been mapping out trips to Banff,
+              Australia, and as much of Western Europe as I can fit in.
+            </p>
           </div>
 
           <div className="flex justify-center md:justify-end">
@@ -30,6 +64,37 @@ export default function About() {
                 className="relative w-96 h-96 object-cover rounded transition-all duration-500"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Interests */}
+        <div className="mb-4">
+          <div className="flex items-center gap-4 mb-10">
+            <span className="h-px w-12 bg-navy/40" />
+            <p className="font-serif text-xs text-navy uppercase tracking-widest">Interests</p>
+            <span className="h-px flex-1 bg-navy/20" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {INTERESTS.map(({ icon, label, detail, sub }) => (
+              <div
+                key={label}
+                className="group relative bg-surface border border-border rounded-xl p-6 hover:border-navy/40 hover:shadow-sm transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl mt-0.5 select-none">{icon}</span>
+                  <div className="min-w-0">
+                    <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+                      <span className="font-serif text-primary text-lg leading-tight">{label}</span>
+                      <span className="text-navy text-xs font-mono tracking-wide opacity-70">
+                        {detail}
+                      </span>
+                    </div>
+                    <p className="text-secondary text-sm leading-snug">{sub}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -45,19 +110,7 @@ function SectionHeader({ label, title }) {
         <p className="font-serif text-xs text-navy uppercase tracking-widest">{label}</p>
         <span className="h-px w-12 bg-navy/40" />
       </div>
-      <h2 className="font-serif text-4xl md:text-5xl text-primary tracking-tight">
-        {title}
-      </h2>
-    </div>
-  )
-}
-
-function Divider() {
-  return (
-    <div className="flex items-center gap-4 mb-8">
-      <span className="h-px flex-1 bg-navy/20" />
-      <span className="text-navy/40 text-xs">✦</span>
-      <span className="h-px flex-1 bg-navy/20" />
+      <h2 className="font-serif text-4xl md:text-5xl text-primary tracking-tight">{title}</h2>
     </div>
   )
 }
