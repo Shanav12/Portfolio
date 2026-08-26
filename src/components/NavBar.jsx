@@ -23,6 +23,7 @@ export default function NavBar() {
 
   useEffect(() => {
     setMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [location])
 
   return (
