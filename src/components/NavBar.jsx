@@ -69,7 +69,7 @@ export default function NavBar() {
 
       {menuOpen && (
         <div className="md:hidden bg-[#f4f4f4] border-b border-navy/20 px-6 pb-4">
-          <ul className="flex flex-col items-center gap-1.5 pt-2">
+          <ul className="flex flex-col items-center gap-3 pt-2">
             {links.map((link) => (
               <li key={link.to} className="w-full">
                 <NavLink
