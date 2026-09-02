@@ -61,7 +61,7 @@ export default function About() {
               <img
                 src={profileImg}
                 alt="Shanav Bagga"
-                className="relative w-52 h-52 md:w-96 md:h-96 object-cover object-top rounded transition-all duration-500"
+                className="relative w-60 h-60 md:w-96 md:h-96 object-cover object-top rounded transition-all duration-500"
               />
             </div>
           </div>
