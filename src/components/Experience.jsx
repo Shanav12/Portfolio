@@ -81,13 +81,12 @@ export default function Experience() {
                     ))}
                   </ul>
 
-                  {i < EXPERIENCES.length - 1 && (
+                  {/* {i < EXPERIENCES.length - 1 && (
                     <div className="flex items-center gap-4 mt-14">
-                      <span className="h-px flex-1 bg-navy/10" />
-                      <span className="text-navy/30 text-xs">✦</span>
+                      <span className="h-px flex-2 bg-navy/10" />
                       <span className="h-px flex-1 bg-navy/10" />
                     </div>
-                  )}
+                  )} */}
                 </div>
               ))}
             </div>

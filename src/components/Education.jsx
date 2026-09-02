@@ -23,7 +23,7 @@ export default function Education() {
 
         <div className="space-y-8">
             {EDUCATION.map((item, i) => (
-              <div key={i} className="border border-navy/20 rounded p-8 hover:border-navy/50 transition-colors duration-200 bg-[#f5f4f1]">
+              <div key={i} className="border border-navy/20 rounded p-8 hover:border-navy/50 transition-colors duration-200 bg-surface">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                   <div>
                     <h3 className="font-serif text-primary text-2xl font-medium">{item.cardTitle}</h3>

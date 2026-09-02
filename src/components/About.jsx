@@ -57,7 +57,7 @@ export default function About() {
 
           <div className="flex justify-center md:justify-end order-first md:order-last">
             <div className="relative">
-              <div className="absolute inset-0 border border-navy/30 translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3 rounded" />
+              <div className="absolute inset-0 border border-navy/30 translate-x-2 translate-y-2 rounded" />
               <img
                 src={profileImg}
                 alt="Shanav Bagga"

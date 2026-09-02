@@ -28,7 +28,7 @@ export default function NavBar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#f4f4f4] border-b border-navy/20"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#1e2a3a] border-b border-navy/20"
     >
       <nav className="w-full pl-20 pr-10 h-18 py-4 flex items-center justify-between">
         <NavLink to="/" className="font-serif text-lg text-navy font-medium tracking-wider">
@@ -69,7 +69,7 @@ export default function NavBar() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#f4f4f4] border-b border-navy/20 px-6 pb-4">
+        <div className="md:hidden bg-[#1e2a3a] border-b border-navy/20 px-6 pb-4">
           <ul className="flex flex-col items-center gap-3 pt-2">
             {links.map((link) => (
               <li key={link.to} className="w-full">
