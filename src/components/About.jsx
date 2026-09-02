@@ -55,13 +55,13 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end order-first md:order-last">
             <div className="relative">
-              <div className="absolute inset-0 border border-navy/30 translate-x-3 translate-y-3 rounded" />
+              <div className="absolute inset-0 border border-navy/30 translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3 rounded" />
               <img
                 src={profileImg}
                 alt="Shanav Bagga"
-                className="relative w-96 h-96 object-cover rounded transition-all duration-500"
+                className="relative w-52 h-52 md:w-96 md:h-96 object-cover object-top rounded transition-all duration-500"
               />
             </div>
           </div>
