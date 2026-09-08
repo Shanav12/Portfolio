@@ -62,7 +62,7 @@ export default function Home() {
             {HOME.name}
           </h1>
 
-          <p className="text-navy font-medium font-sans mb-2">I'm a Software Engineer for College Board</p>
+          <p className="text-navy font-medium font-sans mb-2">I'm a Software Engineer at College Board</p>
           <p className="font-sans text-sm mb-8">Specializing in distributed systems</p>
 
           <div className="flex items-center justify-center gap-4 mb-8">
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="hidden md:block">
           <div className="flex items-center gap-4 mb-8">
             <span className="h-px w-12 bg-navy/40" />
-            <p className="font-serif text-xs text-navy uppercase tracking-widest">Portfolio</p>
+            <p className="font-serif text-md text-navy uppercase tracking-widest">Portfolio</p>
             <span className="h-px w-12 bg-navy/40" />
           </div>
 
@@ -109,7 +109,7 @@ export default function Home() {
           </h1>
 
           <div className="mb-2 text-2xl text-secondary">
-            <span className="text-navy font-medium font-sans">I'm a Software Engineer for College Board</span>
+            <span className="text-navy font-medium font-sans">I'm a Software Engineer at College Board</span>
           </div>
           <div className="mb-10 text-lg font-sans">
             Specializing in distributed systems

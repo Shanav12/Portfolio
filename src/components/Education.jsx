@@ -5,13 +5,11 @@ const EDUCATION = [
     title: 'August 2025 - May 2026',
     cardTitle: "Master's of Computer Science",
     cardSubtitle: 'University of Illinois Urbana-Champaign',
-    cardDetailedText: 'GPA: 3.60',
   },
   {
     title: 'August 2022 - May 2025',
     cardTitle: 'Bachelor of Science in Computer Science & Statistics',
     cardSubtitle: 'University of Illinois Urbana-Champaign',
-    cardDetailedText: 'GPA: 3.71',
   },
 ]
 
