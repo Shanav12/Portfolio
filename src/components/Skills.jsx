@@ -93,7 +93,7 @@ export default function Skills() {
                   {group.items.map((item) => (
                     <div
                       key={item.title}
-                      className="flex items-center gap-2.5 px-4 py-2.5 border border-navy/20 rounded hover:border-navy hover:bg-navy/5 transition-colors duration-200 group"
+                      className="flex items-center gap-2.5 px-4 py-2.5 border border-navy/20 rounded transition-colors duration-200 group"
                     >
                       {item.icon && (
                         <img
@@ -102,7 +102,7 @@ export default function Skills() {
                           className="w-5 h-5 object-contain transition-all duration-200"
                         />
                       )}
-                      <span className="text-sm text-secondary group-hover:text-navy transition-colors duration-200">
+                      <span className="text-sm text-secondary transition-colors duration-200">
                         {item.title}
                       </span>
                     </div>

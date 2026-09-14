@@ -70,8 +70,15 @@ function ProjectCard({ project }) {
       .filter(Boolean)
   }
 
+  const githubLink = links?.find((l) => l.href?.includes('github.com'))?.href
+
   return (
-    <div className="group border border-navy/20 rounded p-6 hover:border-navy/50 transition-all duration-200 flex flex-col h-full bg-surface">
+    <a
+      href={githubLink || undefined}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group border border-navy/20 rounded p-6 hover:border-navy/50 transition-all duration-200 flex flex-col h-full bg-surface no-underline${githubLink ? ' cursor-pointer' : ' cursor-default'}`}
+    >
       <div className="flex items-start justify-between mb-4">
         <h3 className="font-serif text-primary text-lg leading-snug">{title}</h3>
         <svg className="w-5 h-5 text-navy/40 group-hover:text-navy transition-colors shrink-0 ml-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +118,7 @@ function ProjectCard({ project }) {
           ))}
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 

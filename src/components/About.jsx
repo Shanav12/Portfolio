@@ -1,31 +1,32 @@
 import React from 'react'
+import { Music2, Gauge, Trophy, Coffee, Plane } from 'lucide-react'
 
 const profileImg = '/about/smokies.jpg'
 
 const INTERESTS = [
   {
-    icon: '🎵',
+    icon: Music2,
     label: 'Music',
     detail: 'R&B + Rap',
     sub: 'Drake · Kanye · J. Cole · Giveon · Omar Apollo · Brent Faiyaz · Bryson Tiller',
   },
   {
-    icon: '🏎️',
+    icon: Gauge,
     label: 'Formula 1',
     sub: 'Huge McLaren fan, specifically of Lando Norris',
   },
   {
-    icon: '🏈',
+    icon: Trophy,
     label: 'Football',
     sub: 'Born & raised in the Windy City, huge Bears Fan',
   },
   {
-    icon: '☕',
+    icon: Coffee,
     label: 'Coffee',
     sub: 'Caramel latte variations or cappuccinos are the go to',
   },
   {
-    icon: '✈️',
+    icon: Plane,
     label: 'Travel',
     detail: 'Dream destinations',
     sub: 'Banff · Australia · Western Europe',
@@ -50,8 +51,8 @@ export default function About() {
             <p className="text-secondary leading-relaxed text-base">
               Outside of work I'm usually finding a new playlist, catching an F1 race, or hunting
               down a great cappuccino. I grew up playing quarterback and the Bears hold a permanent
-              piece of my heart (for better or worse). Lately I've been mapping out trips to Banff,
-              Australia, and as much of Western Europe as I can fit in.
+              piece of my heart (for better or worse). I've recently been getting more adventurous 
+              and would love to go Western Europe, Australia, and Banff.
             </p>
           </div>
 
@@ -76,13 +77,13 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {INTERESTS.map(({ icon, label, detail, sub }) => (
+            {INTERESTS.map(({ icon: Icon, label, detail, sub }) => (
               <div
                 key={label}
                 className="group relative bg-surface border border-border rounded-xl p-6 hover:border-navy/40 hover:shadow-sm transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-2xl mt-0.5 select-none">{icon}</span>
+                  <Icon className="w-5 h-5 mt-1 text-navy shrink-0 opacity-80" strokeWidth={1.5} />
                   <div className="min-w-0">
                     <div className="flex items-baseline gap-2 mb-1 flex-wrap">
                       <span className="font-serif text-primary text-lg leading-tight">{label}</span>

@@ -23,9 +23,12 @@ export default function Education() {
             {EDUCATION.map((item, i) => (
               <div key={i} className="border border-navy/20 rounded p-8 hover:border-navy/50 transition-colors duration-200 bg-surface">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
-                  <div>
-                    <h3 className="font-serif text-primary text-2xl font-medium">{item.cardTitle}</h3>
-                    <p className="text-secondary text-base italic mt-1">{item.cardSubtitle}</p>
+                  <div className="flex items-start gap-4">
+                    <img src="/uiuc_logo.png" alt="UIUC" className="w-12 h-12 object-contain shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-serif text-primary text-2xl font-medium">{item.cardTitle}</h3>
+                      <p className="text-secondary text-base italic mt-1">{item.cardSubtitle}</p>
+                    </div>
                   </div>
                   <div className="text-right shrink-0">
                     <span className="font-serif text-xl italic text-dim">{item.title}</span>
