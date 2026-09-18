@@ -21,7 +21,7 @@ export default function Education() {
 
         <div className="space-y-8">
             {EDUCATION.map((item, i) => (
-              <div key={i} className="border border-navy/20 rounded p-8 hover:border-navy/50 transition-colors duration-200 bg-surface">
+              <div key={i} className="border border-navy/20 rounded p-8 bg-surface">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                   <div className="flex items-start gap-4">
                     <img src="/uiuc_logo.png" alt="UIUC" className="w-12 h-12 object-contain shrink-0 mt-1" />

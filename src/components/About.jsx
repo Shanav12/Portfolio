@@ -80,7 +80,7 @@ export default function About() {
             {INTERESTS.map(({ icon: Icon, label, detail, sub }) => (
               <div
                 key={label}
-                className="group relative bg-surface border border-border rounded-xl p-6 hover:border-navy/40 hover:shadow-sm transition-all duration-300"
+                className="relative bg-surface border border-border rounded-xl p-6"
               >
                 <div className="flex items-start gap-4">
                   <Icon className="w-5 h-5 mt-1 text-navy shrink-0 opacity-80" strokeWidth={1.5} />
